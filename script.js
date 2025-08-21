@@ -798,4 +798,382 @@ let finalVal = reduceArr.reduce((Acc,cele,index,total)=>{
 
 console.log(finalVal);
 
+console.clear();
+
+// Es6 Edition
+
+// 1) spread operator
+
+// it will use for (array and object)
+
+// why ... [two arr or object we can take merge and clone]
+
+// syntax -- arr - [...],  obj - {...}
+
+let spr1 = [1,2,3,4]
+let spr2 = [5,6,7,8]
+
+let newspr = [...spr1,...spr2]
+
+console.log(newspr);
+
+
+//obj 
+
+let sprObjperson1 ={
+    id : "123Ab",
+    eAge  : 23,
+    eRole : "developer"
+}
+let sprObjperson2 ={
+    id : "!@123",
+    eAge  : 25,
+    eRole : "developer"
+}
+
+let newObj = { ...sprObjperson1, ...sprObjperson2 };
+
+console.log(newObj);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 2) rest operator
+
+// it will use for (function)
+
+//why...[multiple argument store in parameter]
+
+// syntax -- function - (...)
+
+
+
+function re(a,b,...c){
+    console.log(a+b);
+    console.log(c);
+    
+    
+}
+
+re(1,2,3,4,5,6,7,8)
+
+
+
+
+
+// destructure
+
+let abc = [10,20,30,40]
+
+let abc1 = abc[1]
+
+console.log(abc1);
+
+
+// de
+
+
+let [a1,a2,a3,a4] = abc
+
+console.log(a1,a2,a3,a4);
+
+let sumof = a1+a2
+
+console.log(sumof);
+
+
+
+let nested = [1,2,3,[4,5,[6]]]
+
+let [b1,b2,b3,[b4,b5,[b6]]] = nested
+
+console.log(b1,b2,b3,b4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// higher order function
+
+//sort
+
+let ran = [1,2,121,23,3,6,4]
+// 1,2,3,4,6,23,121
+
+ran.sort()
+
+console.log(ran);
+
+let ranval = ran.sort((a,b)=>{
+    return a-b
+})
+
+console.log(ranval);
+let ranval1 = ran.sort((a,b)=>{
+    return b-a
+})
+
+console.log(ranval1);
+
+
+
+//some - like logical or
+
+let some1 = [1,2,3,4,5]
+
+let someVal = some1.some((cEle,ind,to)=>{
+    return cEle%2==0 //1%2==0 = false,2%2==0 = true, 3 = false , 4 - true, 5- false
+})
+
+console.log(someVal);
+
+
+//every - like logical and
+let every1 = [2,4,6,8]
+let someVal1 = every1.every((cEle,ind,toArr)=>{
+    return cEle%2==0
+})
+
+console.log(someVal1);
+
+console.clear();
+
+
+// string methods 
+
+let str = "  Hello world  "
+//charAt()   index-->find Character
+
+console.log(str.charAt(0));
+
+
+//charCodeAt()   index --> ascii value
+
+console.log(str.charCodeAt(0));
+
+
+//includes()   availble value --> true oth - false
+
+console.log(str.includes("H"));
+
+
+//indexOf("findtheValue","fromIndex")  value --> findindex
+
+console.log(str.indexOf("l"));
+
+//lastIndexOf("findtheValue","fromIndex") 
+
+console.log(str.lastIndexOf("l"));
+
+
+//repeat --> repeat the string
+
+console.log(str.repeat(2));
+
+
+//replace("hello","javascript") --> replace the string
+
+console.log(str.replace("Hello","javascript"));
+
+//slice 
+
+console.log(str.slice(6,11));
+
+
+//split -- split the string to word
+
+console.log(str.split("l"));
+
+//startswith
+
+console.log(str.startsWith("H"));
+
+//endsWith
+
+console.log(str.endsWith("d"));
+
+//lowercase
+
+console.log(str.toLowerCase());
+
+
+//uppercase
+
+console.log(str.toUpperCase());
+
+
+// trim --> this method reduce gap for(front and back)
+
+
+console.log(str.trim());
+
+console.log(str.trimEnd());
+console.log(str.trimStart());
+
+
+//math objects 
+
+// Math.abs()  n --> p
+
+console.log(Math.abs(300));
+
+// Math.sign()  -200 --> -1 , 3000 --> 1 , 0 = 0
+
+console.log(Math.sign(340));
+
+
+// Math.sqrt()  5^2 = 25, 25 = 5
+
+console.log(Math.sqrt(25));
+
+//Math.cbrt()  5^3 =125 , 125 =5 ,2^3 = 8
+
+console.log(Math.cbrt(8));
+
+//Math.pow(base,power) (2,3) = 2^3 = 8
+
+console.log(Math.pow(2,3));
+
+//Math.min
+
+let b11 = [23,11,6,43]
+
+console.log(Math.min(...b11));
+
+//Math.max
+
+console.log(Math.max(...b11));
+
+//Math.random
+
+let random21 = Math.random()*10
+
+console.log(random21);
+
+
+//math.trunc
+
+console.log(Math.trunc(random21));
+
+//math.ceil 4.01-->5
+
+console.log(Math.ceil(random21));
+
+
+//math.floor  4.9 --> 4
+
+console.log(Math.floor(random21));
+
+//math.round() 1.4 , 0<5 - 1, 5<=9 - 2 
+
+console.log(Math.round(random21));
+
+
+//date
+
+let date =new Date
+
+console.log(date);
+
+
+// access the particular data 
+
+//get
+
+
+//getFullyear()
+
+console.log(date.getFullYear());
+
+//getmonth()
+
+console.log(date.getMonth());
+
+//getDate()
+
+console.log(date.getDate());
+
+//getDay()
+
+console.log(date.getDay());
+
+//getHours()
+
+console.log(date.getHours());
+
+//getMinutes()
+
+console.log(date.getMinutes());
+
+//getSeconds()
+
+console.log(date.getSeconds());
+
+//toDatestring()
+
+console.log(date.toDateString());
+
+//tolocalTimeString()
+
+console.log(date.toLocaleTimeString());
+
+//tolaclString()
+
+console.log(date.toLocaleString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
