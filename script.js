@@ -1155,6 +1155,100 @@ console.log(date.toLocaleTimeString());
 
 console.log(date.toLocaleString());
 
+console.clear();
+
+// manipulate the Date Constracture inside the data's
+
+//set
+
+// let date1 = new Date
+
+// // console.log(date1.setFullYear(year,month,date));
+// console.log(date1);
+
+
+// date1.setFullYear(2003,1,22)
+
+// console.log(date1);
+
+// date1.setMonth(5,23)
+
+// console.log(date1);
+
+// date1.setDate(30)
+// console.log(date1);
+
+// console.clear();
+
+
+// // dob Day finder
+
+
+// let day = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+// let date2 = new Date
+
+// console.log(date2);
+
+// date2.setFullYear(2000,9,10)
+// console.log(date2);
+// console.log(date2.getDay());
+
+
+// console.log(day[date2.getDay()]);
+
+
+
+
+
+
+
+
+
+// setInterval(()=>{
+//     let date3 = new Date();
+//     console.log(date3.toLocaleTimeString());
+ 
+// },1000)
+
+
+// setTimeout(()=>{
+//   let date3 = new Date();
+//    console.log(date3.toLocaleTimeString());
+// },2000) // async
+
+
+
+
+
+console.clear(); // sync
+
+
+
+
+
+
+
+// function one1(){
+//     console.log("one");
+    
+// }
+
+// function two1(){
+//     console.log("two");
+    
+// }
+
+// function three1(){
+//     console.log("three");
+    
+// // }
+
+// one1() // sy
+// setTimeout(two1,0) // asy
+// three1() //sy
+
+// console.clear(); //sy
 
 
 
@@ -1165,15 +1259,75 @@ console.log(date.toLocaleString());
 
 
 
+// // promise 
+
+
+// // 3.states 
+
+// // 1.resolve - get data
+// // 2.reject -  error of data or not get
+// // 3.pending - coming
+
+
+// let PromiseData = new Promise((resolve,reject,pending)=>{
+//     let dataReceived = true
+//     if(dataReceived){
+//         resolve("data received sucessfully")
+//     }else{
+//         reject(" data not received")
+//     }
+// })
+
+// PromiseData
+// .then((data)=>{
+//     console.log(data);
+    
+// })
+// .catch((error)=>{
+//     console.error(error);  
+// })
 
 
 
+// // Api 
+
+
+// fetch("https://fakestoreapi.com/products/")
+// .then((sucessData)=>{
+//     return sucessData.json()  
+// })
+// .then((jsData)=>{
+//     console.log(jsData);
+//     console.log(jsData.title);
+//     jsData.forEach((cEle)=>{
+//         console.log(cEle.title);
+//     })
+    
+    
+// })
+// .catch((error)=>{
+//     console.error(error.message);  
+// })
+
+
+// Dom - document object model
+
+// 3techniques 
+
+// 1.selecting technique
 
 
 
+// 1.selecting technique 
 
+let storeElement = document.getElementsByTagName("h1")
 
+let storeClassElement = document.getElementsByClassName("one")
 
+let storeIdElement = document.getElementById("two")
 
+console.log(storeElement);
+console.log(storeClassElement);
+console.log(storeIdElement);
 
 
