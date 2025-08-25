@@ -1331,3 +1331,210 @@ console.log(storeClassElement);
 console.log(storeIdElement);
 
 
+
+
+
+
+// // // Selecting Elements 
+
+// // // 1.getElementByTagName - tag in Html
+// // // 2. getElementByClassName - class name
+// // // 3.getElementById - id 
+
+// // // 4. quarySelector("input")
+// // // 5. quarySelector(".one")
+// // // 6. quarySelector("#two")
+
+// // // 7. quarySelectorAll("")
+
+
+// // let selectTag = document.getElementsByTagName("h1")
+
+// // console.log(selectTag);
+
+// // let ClassSelect = document.getElementsByClassName("one")
+
+// // console.log(ClassSelect);
+
+// // let idSelect = document.getElementById("two")
+
+// // console.log(idSelect);
+
+
+
+// // let qTag = document.querySelector("h3")
+
+// // console.log(qTag);
+
+// // let qClass = document.querySelector(".three")
+
+// // console.log(qClass);
+
+// // let qId = document.querySelector("#four")
+
+// // console.log(qId);
+
+
+// // let singleSelect = document.querySelector("h3")
+// // let allSelect = document.querySelectorAll("h3")
+
+// // console.log(singleSelect);
+// // console.log(allSelect);
+
+// // allSelect.forEach((c)=>{
+// //   console.log(c);
+// // })
+
+// // console.clear();
+
+// // // traversing techniques 
+
+// // // 1.parent select method 
+
+// // let child1 = document.querySelector(".child")
+// // console.log(child1);
+
+// // let parent = child1.parentElement
+
+
+
+// // console.log(parent);
+
+
+// // //2.child select method
+
+// // let parent1 = document.querySelector(".parent")
+
+// // console.log(parent1);
+// // console.log(parent1.childElementCount);
+
+// // console.log(parent1.children);
+
+// // console.log(parent1.firstChild);
+// // console.log(parent1.firstElementChild);
+
+// // console.log(parent1.lastElementChild);
+
+
+// // // text .parent >
+// //       // text .child text
+// //       // .child text
+// //       // .child text
+// //       // .child text 
+// //      // /> text
+
+
+
+// // // sibling select method
+
+// // console.clear();
+
+// // let childFirst = document.querySelector(".child")
+// // console.log(childFirst.nextElementSibling);
+
+// // let child2 = childFirst.nextElementSibling
+
+// // let child3 = child2.nextElementSibling
+
+// // console.log(child3);
+
+// // // let difClass = document.querySelector(".child1")
+
+// // // console.log(difClass);
+
+
+// let storeAll = document.querySelectorAll(".menu")
+
+// console.log(storeAll);
+
+// storeAll.forEach((c)=>{
+//   console.log(c.innerHTML);
+  
+// })
+
+// let child1 = document.querySelector("#menu")
+
+// console.log(child1.parentElement);
+
+
+// let parent = document.querySelector("ul")
+// console.log(parent.childElementCount);
+
+// let childOne = document.querySelector("#menu")
+
+// let child2 = childOne.nextElementSibling
+
+// console.log(child2.previousElementSibling);
+
+// console.clear();
+
+// let li1 = document.querySelector("li")
+
+// console.log(li1);
+
+// let li1Val = li1.textContent
+
+// let li2 = li1.nextElementSibling
+
+// console.log(li2);
+
+// li2.textContent = li1Val
+
+
+
+// let spanAll = document.querySelectorAll("span")
+
+// spanAll.forEach((a)=>{
+//   console.log(a.innerText);
+  
+// })
+
+// // manipulation
+
+// // input tag inside value you want access mean --> value
+// // remaining all tag inside you want access the value --> 1. testElement, 2. innerText,3.innerHTML
+
+
+// //1.event Listner
+// //2.event handler
+
+
+// //1.create element
+// //append --> one by one
+// //prepend --> one before one
+// //remove --> delete
+// //eval --> (maths)
+// //style
+
+
+// select
+
+let input = document.querySelector("input")
+let button = document.querySelector("button")
+let ol = document.querySelector("ol")
+
+
+button.addEventListener("click",()=>{
+  let storeInVal = input.value
+  console.log(storeInVal);
+let li = document.createElement("li")
+
+li.style.color="green"
+
+console.log(li);
+li.textContent=storeInVal
+
+ol.append(li)
+
+console.log(ol);
+
+li.addEventListener("click",()=>{
+  li.remove()
+})
+
+
+  
+})
+
+
+
