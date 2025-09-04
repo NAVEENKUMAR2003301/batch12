@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
-  <p class="one">Google</p>
-  <div id="two">gemini</div>
-
- <script>
-
- </script> 
+ <div class="calculator">
+    <input type="text" readonly>
+    <button type="button" onclick="add('%')">%</button>
+    <button type="button" onclick="clear1()">c</button>
+    <button type="button" onclick="del()">del</button>
+    <button type="button" onclick="add('/')">/</button>
+    <button type="button" onclick="add('7')">7</button>
+    <button type="button" onclick="add('8')">8</button>
+    <button type="button" onclick="add('9')">9</button>
+    <button type="button" onclick="add('*')">*</button>
+    <button type="button" onclick="add('4')">4</button>
+    <button type="button" onclick="add('5')">5</button>
+    <button type="button" onclick="add('6')">6</button>
+    <button type="button" onclick="add('-')">-</button>
+    <button type="button" onclick="add('1')">1</button>
+    <button type="button" onclick="add('2')">2</button>
+    <button type="button" onclick="add('3')">3</button>
+    <button type="button" onclick="add('+')">+</button>
+    <button type="button" onclick="add('00')">00</button>
+    <button type="button" onclick="add('0')">0</button>
+    <button type="button" onclick="add('.')">.</button>
+    <button type="button" class="equal" onclick="final()">=</button>
+ </div>
+<p></p>
   <script src="./script.js"></script>
-  <h1>hello</h1> 
+ 
 </body>
 </html>
